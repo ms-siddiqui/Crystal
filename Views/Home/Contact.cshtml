@@ -1,0 +1,176 @@
+﻿@model CrystalMeditech.Models.ContactForm
+@{
+    ViewBag.Title = "Contact";
+}
+<title>Contact-Crystal Meditech</title>
+<!--
+========================================
+STEP BREADCUMP AREA START FORM HERE
+========================================
+  -->
+<div class="step-breadcump" style="background: url(../assets/images/section-img/bcContactUs.jpg);background-size: 100% 135%; background-repeat:no-repeat;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="breadcump-text text-center">
+                    <h2>CONTACT US</h2>
+                    <ul>
+                        @*<li><a href="/Home/Index">Home <span>/</span> </a></li>
+                            <li class="active"><a href="#">Contact Us</a></li>*@
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+========================================
+STEP BREADCUMP AREA END FORM HERE
+========================================
+  -->
+
+<div class="step-get-in-touch section-pading">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    <h2 class="section-heading2">GE<span class="sec-bar-2">T IN TOU</span>CH</h2>
+                </div>
+            </div>
+            <!-- end section title -->
+        </div>
+        <!-- end row -->
+        <div class="row">
+            <div class="contact-address">
+                <div class="col-md-3 col-md-offset-1 col-sm-4 col-xs-12 mbt-30">
+                    <div class="single-contact-address">
+                        <div class="media">
+                            <div class="pull-left">
+                                <div class="con-i">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h5>+91-8801235569</h5>
+                                <h5>+91-8019851713</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single contact address -->
+                <div class="col-md-4 col-sm-4 col-xs-12 mbt-30">
+                    <div class="single-contact-address">
+                        <div class="media">
+                            <div class="pull-left">
+                                <div class="con-i">
+                                    <i class="fa fa-paper-plane"></i>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h5><a href="mailto:info@distinctive-innovations.com<">info@crystalmeditech.com</a></h5>
+                                <h5><a href="mailto:www.distinctive-innovations.com">www.crystalmeditech.com</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single contact address -->
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="single-contact-address">
+                        <div class="media">
+                            <div class="pull-left">
+                                <div class="con-i">
+                                    <i class="fa fa-home"></i>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h5>
+                                    H.No.16-2-738/F/5,
+                                    SSS NILAYAM, G2
+                                    FERN HILLS,
+                                    Behind Malakpet T.V.Tower, Asmangadh
+                                    HYDERABAD-500036
+                                </h5>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single contact address -->
+            </div>
+        </div> <!-- end row -->
+        <div class="big-spacer2"></div> <!-- end big spacer -->
+        <div class="row">
+            <form action="/Home/SendContactForm" method="post" id="my_form" autocomplete="off" class="main-contact-form-contact FormClass" onsubmit="return jQueryAjaxPost(this);" enctype="multipart/form-data">
+                <input type="hidden" name="_token" value="Di3dLuCC3ITTp5dLa5dwht3FHzfJcr98Z330vruI">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control contact-input", autocomplete = "off", Placeholder = "Name" } })
+                        <span class="text-danger"> @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })</span>
+                    </div>
+                    <div class="form-group">
+                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control contact-input", autocomplete = "off", Placeholder = "Email" } })
+                        <span class="text-danger"> @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })</span>
+                    </div>
+                    <div class="form-group">
+                        @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control contact-input", autocomplete = "off", Placeholder = "Subject" } })
+                        <span class="text-danger"> @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.TextAreaFor(model => model.Message, new { @class = "form-control contact-input", autocomplete = "off", Placeholder = "Message" })
+                        <span class="text-danger"> @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })</span>
+                    </div>
+                    <div class="text-right">
+                        <button type="submit" class="btn-mr waves-effect waves-light">SEND</button>
+                    </div>
+                </div>
+            </form><!-- .contact-form -->
+
+        </div>
+    </div>
+</div>
+
+<div class="contact-page-map-area">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2860.8675318368773!2d78.51096391390169!3d17.369542307893678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97ec41921149%3A0x8483ad26229575cc!2sCrystal%20Meditech!5e1!3m2!1sen!2sus!4v1644661795132!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" aria-hidden="false" tabindex="0"></iframe>
+
+</div>
+
+
+
+@section scripts{
+    <script type="text/javascript">
+        function jQueryAjaxPost(form) {
+            $.validator.unobtrusive.parse(form);
+            if ($(form).valid()) {
+                var ajaxConfig = {
+                    type: 'POST',
+                    url: form.action,
+                    data: new FormData(form),
+                    success: function (response) {
+                        //alert(response.success);
+                        if (response.success) {
+                            debugger;
+                            SuccessMessage(response.message);
+
+                            $('#Name').val("");
+                            $('#Email').val("");
+                            $('#Subject').val("");
+                            $('#Message').val("");
+                        }
+
+                        else {
+                            ErrorMessage(response.message);
+                        }
+                    }
+                }
+                if ($(form).attr('enctype') == "multipart/form-data") {
+                    ajaxConfig["contentType"] = false;
+                    ajaxConfig["processData"] = false;
+                }
+                $.ajax(ajaxConfig);
+            }
+            return false;
+        }
+    </script>
+}

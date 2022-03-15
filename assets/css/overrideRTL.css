@@ -1,0 +1,122 @@
+﻿@font-face {
+    font-family: 'Almarai-Regular';
+    src: url('../../fonts/Almarai/Almarai-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Almarai-Regular' !important;
+    direction: rtl;
+    line-height: 28px;
+    font-size: 16px;
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+}
+
+.submenu-li a {
+    padding: 4px 17px !important;
+    text-align:right !important;
+}
+.submenu-li ul {
+    list-style: outside none none;
+    margin: 0 -17px 0 0;
+    padding: 0;
+    text-align: right !important;
+}
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+    float: right !important;
+}
+
+
+.our-mission-vission-rapper {
+    padding-right: 33% !important;
+    padding-left: 0% !important;
+}
+.mission-list li i.fa {
+    padding-left: 10px !important;
+}
+.owl-carousel .owl-item {
+    min-height: 1px;
+    float: right !important;
+}
+
+.text-right {
+    text-align: left;
+}
+
+form.main-contact-form-contact input {
+    border: 1px solid #ccc;
+    display: block;
+    height: 46px;
+    margin-bottom: 30px;
+    padding-right: 30px !important;
+    width: 100%;
+}
+.media-left, .media > .pull-left {
+    padding-left: 10px !important;
+}
+
+.pull-left {
+    float: right !important;
+}
+.pull-right {
+    float: left !important;
+}
+.contact-address .single-contact-address .media .media-body {
+    padding-right: 13px !important;
+}
+@media (min-width: 992px) {
+    .col-md-offset-2 {
+        margin-right: 16.66666667% !important;
+        margin-left: 0% !important;
+    }
+}
+form.main-contact-form-contact textarea {
+    padding-right: 30px !important;
+}
+
+.top-contact ul li a span i.fa {
+    padding-left: 10px !important;
+    padding-right: 0px !important;
+}
+.skillst {
+    padding-right: 30px !important;
+    padding-left: 0px !important;
+}
+.progress-bar {
+    float: right !important;
+}
+.dropdown-menu-right {
+    left: 0 !important;
+    right: auto !important;
+}
+.dropdown-item{
+    text-align:right !important;
+}
+
+.sec-bar-2::before {
+    right: 0 !important;
+}
+.sec-bar-2::after {
+    right: 0 !important;
+}
+main-menu ul {
+    text-align: right !important;
+}
+.fa-angle-double-right:before {
+    content: "\f100" !important;
+}
+
+p{
+    text-align:right !important;
+}
+.text-left{
+    text-align:right !important;
+}
+.breadcump-text ul {
+    direction:ltr;
+}
+.contact-address .single-contact-address .media .media-body {
+    direction: ltr !important;
+}

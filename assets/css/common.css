@@ -1,0 +1,85 @@
+﻿.services-title {
+    font-size: 21px !important;
+}
+@font-face {
+    font-family: 'Almarai-Regular';
+    src: url('../../fonts/Almarai/Almarai-Regular.ttf') format('truetype');
+}
+body {
+    font-family: 'Almarai-Regular' !important;
+}
+body a{
+    font-family: 'Almarai-Regular' !important;
+}
+.step-breadcump:after {
+    opacity: 0.5 !important;
+}
+.main-menu ul li a {
+    font-weight: bold !important;
+}
+.step-main-footer {
+    padding-top: 30px !important;
+}
+.footer-title {
+    font-family: 'Almarai-Regular' !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 10px;
+    padding: 0 0 0px;
+    font-family: 'Almarai-Regular' !important;
+}
+
+.step-single-services p {
+    font-size: 16px;
+    color: #222;
+    margin: 0 0 0px;
+    text-align: justify !important;
+}
+.step-breadcump:after {
+    background: rgb(33 150 243 / 78%) !important;
+}
+.footer-address li {
+    line-height: 36px;
+    display: flex;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    height: 140px;
+}
+.breadcump-text ul li.active a {
+    color: #ffffff !important;
+}
+.img-circle{
+    height:135px !important;
+    width:135px !important;
+}
+
+.botBox {
+    color: #fff;
+    background-size: cover;
+    background-position: 50%;
+    padding: 30px;
+    cursor: pointer;
+    min-height: 450px;
+    text-align: center;
+    position: relative;
+}
+.mission-list ul li {
+    font-size: 18px;
+    line-height: 32px;
+    display: flex;
+}
+.mission-list ul li span{
+    display: contents;
+}
+.mission-list li i.fa {
+    padding-top: 8px;
+}
+form.main-contact-form-contact input {
+    margin-bottom: 0px !important;
+}
+form.main-contact-form-contact textarea {
+    margin-bottom: 0px !important;
+}

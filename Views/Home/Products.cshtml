@@ -1,0 +1,223 @@
+﻿
+@{
+    ViewBag.Title = "Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<title>Products-Crystal Meditech</title>
+<style type="text/css">
+
+
+    .caption,
+    h1,
+    .date {
+        margin: 0;
+        text-align: center;
+    }
+
+    .caption, h1 {
+        font-family: "Reenie Beanie", sans-serif;
+        font-size: 15px;
+        padding: 16px 10px 0 10px;
+        font-weight: bold;
+    }
+
+    .date {
+        font-size: 0.75em;
+    }
+
+    .description {
+        font-size: 0.9em;
+        padding: 6px 12px 6px 20px;
+        text-align: justify !important;
+        display: grid;
+    }
+
+    .container1 {
+        perspective: 1000px;
+        display: inline-block;
+        margin: 2%;
+    }
+
+        .container1:hover .flipper {
+            transform: rotateY(180deg);
+        }
+
+    .container1,
+    .front,
+    .back {
+        width: 250px;
+        height: 250px;
+    }
+
+    .flipper {
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+
+    .front,
+    .back {
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 250px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .front {
+        z-index: 2;
+    }
+
+    .back {
+        transform: rotateY(180deg);
+    }
+
+    #content {
+        text-align: center;
+    }
+
+    .front img {
+        width: 100%;
+        min-height: 189px;
+    }
+
+    .btn-sm {
+        padding: 5px 20px;
+        font-size: 16px;
+        text-transform: initial;
+    }
+</style>
+<!--
+========================================
+STEP BREADCUMP AREA START FORM HERE
+========================================
+  -->
+<div class="step-breadcump">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="breadcump-text text-center">
+                    <h2> Our Products</h2>
+                    <ul>
+                        @*<li><a href="/Home/Index">Home <span>/</span> </a></li>
+                        <li class="active"><a href="#">Products</a></li>*@
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+========================================
+STEP BREADCUMP AREA END FORM HERE
+========================================
+  -->
+<div class="step-services section-pading">
+    <div class="container">
+        <div class="row">
+            <div id="content">
+                <div class="container1">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="~/assets/images/product/Surgical-Gowns.jpeg" alt="cherry blossoms">
+                            <p class="caption">Surgeon Gown & Drape Kits</p>
+                        </div>
+                        <div class="back">
+                            <p class="description">Crystal Meditech are the manufacturers of customised surgery pack and pre-designed drapes, wraps for healthcare industry...</p>
+                            @*<a href="/Product/TravelAgency_ERP" class="btn btn-sm btn-primary">Read More</a>*@
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container1">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="~/assets/images/product/Biomedical-Equipments.jpg" alt="Red Purple and Yellow Tulip">
+                            <p class="caption">Biomedical – Equipments</p>
+                        </div>
+                        <div class="back">
+                            <p class="description">
+                                Provide all Brands of ECG machine cables, Monitor cables, SPO2 probes, Diathermy probes, NIBP cuffs, Medical batteries, Printer Paper/Rolls etc .. ...
+                            </p>
+                            @*<a href="/Product/DMC_ERP_Solution" class="btn btn-sm btn-primary">Read More</a>*@
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container1">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="~/assets/images/product/Sales-Services.jpg" alt="Red Purple and Yellow Tulip" height="105px">
+                            <p class="caption">Sales & Services</p>
+                        </div>
+                        <div class="back">
+                            <p class="description">
+                                we provide board level and component level services for biomedical equipment. we have well qualified and immense experienced professionals to do component level services...
+                            </p>
+
+                            @*<a href="/Product/B2B_Travel_Portal" class="btn btn-sm btn-primary">Read More</a>*@
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container1">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="~/assets/images/product/surgical-products.jpg" />
+                            <p class="caption">Supply Surgicals</p>
+                        </div>
+                        <div class="back">
+                            <p class="description">
+                                We are the best surgical and medical supply in Hyderabad, and a trusted vendor partner of some of the top healthcare institutions.We understand the healthcare industry needs. that is why we are always ready to service hospitals and clinics with life-saving gear, whenever they need it, at reasonable costs.
+
+                            </p>
+                            @*<a href="/Product/B2C_Online_Platform" class="btn btn-sm btn-primary">Read More</a>*@
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container1">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="~/assets/images/product/Lab-Reagents.jpg" alt="Red Purple and Yellow Tulip">
+                            <p class="caption">
+                                Lab Reagents & Solutions
+                            </p>
+                        </div>
+                        <div class="back">
+                            <p class="description">
+                                Chemical reagents are most often used in various types of research work, chemical analysis, in the preparation and also the production of other substances...
+
+                            </p>
+                            @*<a href="/Product/Corporate_BookingEngine" class="btn btn-sm btn-primary">Read More</a>*@
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container1">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="~/assets/images/product/Hospital-Furniture.jpg" alt="Red Purple and Yellow Tulip">
+                            <p class="caption">
+                                Hospital & Healthcare Furniture
+                            </p>
+                        </div>
+                        <div class="back">
+                            <p class="description">
+                                Hospital furniture makes up everything other than a hospital bed or treatment table. These items help any hospital, clinic, or healthcare facility stay functional and comfortable for both patients and staff alike. Products like waiting room furniture, exam room cabinets, and furnishings for patient rooms etc.
+                            </p>
+                            @*<a href="/Product/HAJJ_UMRAH_Automation" class="btn btn-sm btn-primary">Read More</a>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
